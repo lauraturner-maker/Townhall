@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q1 Internal Town Hall | Lineup</title>
+    <title>Town Hall Speaker Lineup</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -18,31 +18,13 @@
             background-color: var(--light);
             color: var(--dark);
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             line-height: 1.6;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 0;
-            border-bottom: 2px solid #e2e8f0;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-
-        .event-details {
-            color: var(--secondary);
-            font-weight: 500;
         }
 
         .speaker-card {
@@ -53,6 +35,7 @@
             margin-bottom: 30px;
             overflow: hidden;
             transition: transform 0.2s;
+            border: 1px solid #e2e8f0;
         }
 
         .speaker-card:hover {
@@ -60,8 +43,8 @@
         }
 
         .speaker-image {
-            width: 250px;
-            height: 250px;
+            width: 280px;
+            height: 280px;
             object-fit: cover;
         }
 
@@ -80,26 +63,28 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             text-transform: uppercase;
+            width: fit-content;
         }
 
         .speaker-name {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             margin: 0;
             color: var(--dark);
+            line-height: 1.2;
         }
 
         .speaker-title {
             color: var(--secondary);
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 15px;
-            font-style: italic;
+            font-weight: 500;
         }
 
         .speaker-bio {
             font-size: 0.95rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             color: #475569;
         }
 
@@ -108,15 +93,17 @@
             background-color: var(--primary);
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 6px;
+            padding: 12px 24px;
+            border-radius: 8px;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: background 0.2s;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
         }
 
         .ama-link:hover {
             background-color: var(--accent);
+            box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
         }
 
         @media (max-width: 768px) {
@@ -125,7 +112,7 @@
             }
             .speaker-image {
                 width: 100%;
-                height: 200px;
+                height: 250px;
             }
         }
     </style>
@@ -133,29 +120,25 @@
 <body>
 
 <div class="container">
-    <header>
-        <h1>Q1 Internal Town Hall | Lineup</h1>
-        <p class="event-details">Feb 25, 2026 • 11:00 pM EST • Zoom</p>
-    </header>
     <div class="speaker-card">
         <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Sarah Chen" class="speaker-image">
         <div class="speaker-info">
             <span class="subject-tag">Vision & Strategy</span>
             <h2 class="speaker-name">Marcus Chen</h2>
             <div class="speaker-title">Chief Executive Officer</div>
-            <p class="speaker-bio">Marcus leads our global mission with 20 years of experience in tech innovation. Today, he will be outlining our roadmap for the upcoming fiscal year and our expansion into sustainable energy markets.</p>
-            <a href="mailto:townhall@company.com?subject=Question for Sarah Chen" class="ama-link">Ask Me Anything</a>
+            <p class="speaker-bio">With over 20 years in the technology sector, Marcus drives our long-term mission and global growth. Today he will share our strategic focus for the upcoming fiscal year and the transition to sustainable infrastructure.</p>
+            <a href="mailto:questions@example.com?subject=Town Hall: Sarah Chen" class="ama-link">Ask Me Anything</a>
         </div>
     </div>
 
-    <div class="speaker-card">
+   <div class="speaker-card">
         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Marcus Thorne" class="speaker-image">
         <div class="speaker-info">
-            <span class="subject-tag">Product Roadmap</span>
+            <span class="subject-tag">Product Innovation</span>
             <h2 class="speaker-name">Sarah Thorne</h2>
             <div class="speaker-title">VP of Product Engineering</div>
-            <p class="speaker-bio">Sarah oversees the development of our flagship software suites. She'll be giving us a first look at the "Project Orion" interface and the integration of AI-driven analytics into our core platform.</p>
-            <a href="mailto:townhall@company.com?subject=Question for Marcus Thorne" class="ama-link">Ask Me Anything</a>
+            <p class="speaker-bio">Sarah leads our engineering and design teams. She will be providing an exclusive look at our next-generation platform features and the rollout of our internal developer tools.</p>
+            <a href="mailto:questions@example.com?subject=Town Hall: Marcus Thorne" class="ama-link">Ask Me Anything</a>
         </div>
     </div>
 
@@ -165,11 +148,10 @@
             <span class="subject-tag">Culture & People</span>
             <h2 class="speaker-name">Ivan Rodriguez</h2>
             <div class="speaker-title">Head of People & Culture</div>
-            <p class="speaker-bio">Ivan is dedicated to making our company the best place to work. He will be sharing updates on our new remote-first flexibility policy and the rollout of the 2026 Professional Development grants.</p>
-            <a href="mailto:townhall@company.com?subject=Question for Elena Rodriguez" class="ama-link">Ask Me Anything</a>
+            <p class="speaker-bio">Ivan is championing our "People First" initiative. He’ll be discussing our new flexible work-life programs and the upcoming global mentorship program for all employees.</p>
+            <a href="mailto:questions@example.com?subject=Town Hall: Elena Rodriguez" class="ama-link">Ask Me Anything</a>
         </div>
     </div>
-
 </div>
 
 </body>
