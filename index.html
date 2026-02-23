@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Internal Town Hall | Lineup</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #0ea5e9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .event-details {
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .speaker-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .speaker-image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .speaker-info {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .subject-tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .speaker-name {
+            font-size: 1.5rem;
+            margin: 0;
+            color: var(--dark);
+        }
+
+        .speaker-title {
+            color: var(--secondary);
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .speaker-bio {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+
+        .ama-link {
+            align-self: flex-start;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .ama-link:hover {
+            background-color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .speaker-card {
+                flex-direction: column;
+            }
+            .speaker-image {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Company Global Town Hall</h1>
+        <p class="event-details">March 15, 2026 • 10:00 AM EST • Main Auditorium & Zoom</p>
+    </header>
+
+    <div class="speaker-card">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Sarah Chen" class="speaker-image">
+        <div class="speaker-info">
+            <span class="subject-tag">Vision & Strategy</span>
+            <h2 class="speaker-name">Sarah Chen</h2>
+            <div class="speaker-title">Chief Executive Officer</div>
+            <p class="speaker-bio">Sarah leads our global mission with 20 years of experience in tech innovation. Today, she will be outlining our roadmap for the upcoming fiscal year and our expansion into sustainable energy markets.</p>
+            <a href="mailto:townhall@company.com?subject=Question for Sarah Chen" class="ama-link">Ask Me Anything</a>
+        </div>
+    </div>
+
+    <div class="speaker-card">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Marcus Thorne" class="speaker-image">
+        <div class="speaker-info">
+            <span class="subject-tag">Product Roadmap</span>
+            <h2 class="speaker-name">Marcus Thorne</h2>
+            <div class="speaker-title">VP of Product Engineering</div>
+            <p class="speaker-bio">Marcus oversees the development of our flagship software suites. He'll be giving us a first look at the "Project Orion" interface and the integration of AI-driven analytics into our core platform.</p>
+            <a href="mailto:townhall@company.com?subject=Question for Marcus Thorne" class="ama-link">Ask Me Anything</a>
+        </div>
+    </div>
+
+    <div class="speaker-card">
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Elena Rodriguez" class="speaker-image">
+        <div class="speaker-info">
+            <span class="subject-tag">Culture & People</span>
+            <h2 class="speaker-name">Elena Rodriguez</h2>
+            <div class="speaker-title">Head of People & Culture</div>
+            <p class="speaker-bio">Elena is dedicated to making our company the best place to work. She will be sharing updates on our new remote-first flexibility policy and the rollout of the 2026 Professional Development grants.</p>
+            <a href="mailto:townhall@company.com?subject=Question for Elena Rodriguez" class="ama-link">Ask Me Anything</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
